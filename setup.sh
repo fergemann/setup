@@ -27,11 +27,6 @@ sudo add-apt-repository -y ppa:cassou/emacs
 sudo apt-get -qq update
 sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
 
-# Install some node libraries for startup assignments
-npm install cheerio
-npm install commander
-npm install restler
-
 # Install Heroku toolbelt
 # https://toolbelt.heroku.com/debian
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
@@ -51,4 +46,9 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sb dotfiles/.gitconfig .
 ln -sf dotfiles/.emacs.d .
+
+# Install some node libraries for startup assignments
+npm install cheerio
+npm install commander
+npm install restler
 
